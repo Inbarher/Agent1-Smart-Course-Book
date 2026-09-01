@@ -1,0 +1,7 @@
+# Optional production integrations. The local demo and tests use Python's standard library.
+google-genai>=1.0.0
+pypdf>=5.0.0
+reportlab>=4.0.0
+python-dotenv>=1.0.0
+# On Windows, lets Python use enterprise/system certificate roots for HTTPS.
+pip-system-certs>=5.0.0; platform_system == "Windows"

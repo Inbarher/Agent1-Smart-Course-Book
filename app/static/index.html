@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Smart Course Book</title>
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="style.css?v=processing-visibility-v2">
+<body>
+  <header><div><small>LOCAL-FIRST • RTL</small><h1>ספר הקורס החכם</h1></div><div class="toolbar"><button class="secondary" onclick="settingsForm()">הגדרות</button><button onclick="courseForm()">+ קורס חדש</button></div></header>
+  <main><aside><h2>הקורסים שלי</h2><div id="courses"></div></aside><section id="content"><div class="hero"><h2>ללמוד מהרצאה אחת, במקום אחד</h2><p>העלו מצגת, תמלול או הקלטה. המערכת שומרת את מקורות הלימוד ובונה מחברת עם הפניות שקופות למקור.</p><button onclick="courseForm()">יצירת קורס ראשון</button></div></section></main>
+  <div id="processing-indicator" class="processing-indicator" hidden role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span><span id="processing-message">מעבד את החומר…</span></div>
+  <dialog id="modal"><form method="dialog" id="form"></form></dialog>
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="app.js?v=personal-note-caret-v2"></script>
+</body>
+</html>
